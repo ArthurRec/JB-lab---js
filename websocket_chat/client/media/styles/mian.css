@@ -1,0 +1,91 @@
+html, body{
+    background-color: #373e45;
+    margin: 0px;
+    text-align: center;
+}
+.container, .history, .input, .send, .people{
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #373e45;
+}
+.container{
+    text-align: left;
+    width: 960px;
+    background: white;
+    height: 500px;
+    margin: 50px auto;
+    padding: 10px;
+}
+.ava{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 15px;
+    display: inline-block;
+}
+.history {
+    width: 700px;
+    height: 420px;
+    padding: 0;
+}
+    .history .message{
+        min-height: 30px;
+        padding: 7px;
+        padding-left: 49px;
+        position: relative;
+    }
+    .message:nth-child(2n){
+        background: #f9f9f9;
+    }
+    .message.error{
+        color: red;
+    }
+    .message.system{
+        color: #777;
+    }
+    .message .ava{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 7px;
+        left: 7px;
+    }
+    .message span{
+        vertical-align: top;
+    }
+    .message .name {
+        font-weight: bold;
+    }
+    .message .time {
+        color: #777;
+    }
+.people {
+    height: 400px;
+    width: 220px;
+    float: right;
+}
+    .people .human {
+        border-bottom: 1px solid #eee;
+        cursor: pointer;
+    }
+    .people .name{
+        font-size: 20px;
+        vertical-align: top;
+        display: inline-block;
+        margin-top: 10px;
+    }
+.input {
+    width: 800px;
+    height: 45px;
+    margin-top: 5px;
+    overflow-y: hidden;
+    outline: none;
+}
+.send {
+    float: right;
+    cursor: pointer;
+    margin-top: 17px;
+    width: 100px;
+    text-align: center;
+}
